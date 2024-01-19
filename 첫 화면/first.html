@@ -1,0 +1,51 @@
+<!--첫 화면-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>first</title>
+  <link rel= "stylesheet" type= "text/css" href= "css/indexStyles.css">
+  <script type= "text/javascript">
+  function checkid() {
+    var id = document.getElementById("txtUserID").value;
+
+    if ( id == "TWICE")
+    {
+      location.href='../두번째 화면/mainhome.html'
+    }
+    else {
+      alert("TWICE를 입력하세요");
+    }
+  }
+
+</script>
+</head>
+    <body>
+      <div class = "container">
+        <div class = "main">
+          <div id = "logoarea">
+            <div id = "mainlogo">TWICE Fan</div>
+            </div>
+
+            <div id = "loginarea">
+              <div class= "message">
+                <strong>ID에 TWICE를 입력하세요.</strong>
+              </div>
+              <div class = "box login" style = "max-width:280px; margin: 0 auto;">
+                <div class = "loginbox-left">
+                  <fieldset class  = "boxBody">
+                    <input  type= "text" maxlength= "30" id= "txtUserID"  placeholder= "ID">
+                  </fieldset>
+                </div>
+                <div class="loginbox-right">
+                  <input type="button" name="btnLogin" value="입장하기" onclick="checkid()" id="btnLogin" class="btnLogin">
+                </div>
+                <div class = "clear"></div>
+                <div style="margin-left:8px;margin-top:7px;"></div>
+                <div class = "clear"></div>
+
+
+                </div>
+              </div>
+            </div>
+      </body>
+  </html>

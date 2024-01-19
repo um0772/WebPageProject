@@ -1,0 +1,44 @@
+html  {
+  margin: 0;
+  width: 100%
+
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  background: #fff;
+  background-image: url(images/sana01.png);
+  background-size: cover;
+
+
+}
+
+
+section {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+
+  position: absolute;
+
+  z-index: -1;
+}
+
+p {
+  text-align: center;
+}
+.mainlogo {
+  width: 40px;
+  height: 30px;
+
+  text-indent:-9999px;
+  background-size: 75%;
+  position: relative;
+  bottom: 40px;
+
+  left: 20px;
+  z-index: 1;
+  background-repeat: no-repeat;
+  mix-blend-mode: lighten;
+
+}

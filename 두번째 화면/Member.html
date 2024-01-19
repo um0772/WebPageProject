@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Member</title>
+    <link rel = "stylesheet" type = "text/css" href = "Member.css">
+
+</head>
+<body>
+
+
+    <table style= " width: 100%; height: 80px; border: 2px;">
+      <tbody>
+        <tr>
+          <td colspan="2" style= "background-image: linear-gradient(to right, #FF5FA2, #FCC89B);">
+            <img class= "mainlogo" src= "logo4.PNG"  onclick= "location.href= 'mainhome.html';">
+
+              <span style= "font-size: 20px; padding: 0 18PX; text-decoration: NONE; color: #fff; font-weight: 600; text-shadow: 0 0 20px #009be0;">
+                Member
+              </span>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p> 이미지 클릭 시 각 멤버 소개 페이지로 이동</p>
+    <table class="container">
+
+      <img class= "img-twice" src="./images/Nayeon.jpg" onmouseenter= "zoomIn(event)" onmouseleave= "zoomOut(event)" onclick= "location.href= 'Nayeon.html';">
+
+
+
+
+      <img class= "img-twice" src="./images/Jeongyeon.jpg" onmouseenter= "zoomIn(event)" onmouseleave= "zoomOut(event)" onclick= "location.href= 'Jeongyeon.html';">
+
+      <img  class="img-twice" src="./images/Momo.jpg" onmouseenter= "zoomIn(event)" onmouseleave= "zoomOut(event)" onclick= "location.href= 'Momo.html';">
+
+      <img class="img-twice"  src="./images/Sana.jpg" onmouseenter= "zoomIn(event)" onmouseleave= "zoomOut(event)" onclick= "location.href= 'Sana.html';">
+
+      <img  class="img-twice" src="./images/Jihyo.jpg"  onmouseenter= "zoomIn(event)" onmouseleave= "zoomOut(event)" onclick= "location.href= 'Jihyo.html';">
+
+
+
+      </table>
+
+
+      <table clss= "containerA">
+
+        <img class= "img-twice2" src= "./images/Mina.jpg" onmouseenter= "zoomIn(event)" onmouseleave= "zoomOut(event)" onclick= "location.href= 'Mina.html';">
+
+        <img class= "img-twice2" src= "./images/Dahyun.jpg" onmouseenter= "zoomIn(event)" onmouseleave= "zoomOut(event)" onclick= "location.href= 'Dahyun.html';">
+
+        <img class= "img-twice2" src= "./images/Chaeyoung.jpg" onmouseenter= "zoomIn(event)"  onmouseleave= "zoomOut(event)" onclick= "location.href= 'Chaeyoung.html';">
+
+        <img class= "img-twice2" src= "./images/Tzuyu.jpg" onmouseenter= "zoomIn(event)"  onmouseleave= "zoomOut(event)" onclick= "location.href= 'Tzuyu.html';">
+
+    </table>
+
+ <script>
+      function zoomIn(event) {
+        event.target.style.width = "300px";
+        event.target.style.height = "400px";
+        event.target.style.transition = "all 0.5s";
+      }
+
+      function zoomOut(event) {
+        event.target.style.width = "250px";
+        event.target.style.height = "350px";
+        event.target.style.transition = "all 0.5s";
+      }
+</script>
+  </body>
+  </html>
